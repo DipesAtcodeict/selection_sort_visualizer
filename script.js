@@ -25,12 +25,12 @@ let visualize = async data => {
         data[j] = temp;
         compResult.innerHTML=`Since data[${i}] > data[${j}]. Swapping them!`;
         currrentArray.innerHTML = `Current Array: [${data.join(",")}]`
-        wait(5000);
+        await wait(5000);
       }
       else{
         compResult.innerHTML=`Since data[${i}] < data[${j}]. Letting them as it is!`;
         currrentArray.innerHTML = `Current Array: [${data.join(",")}]`
-        wait(5000);
+        await wait(5000);
       }
     }
   }
